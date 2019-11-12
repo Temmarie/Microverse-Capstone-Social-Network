@@ -5,6 +5,10 @@ $auxcolor: #ef906e;
   background-color: $maincolor;
 }
 
+.white-bg {
+  background-color: #fff;
+}
+
 .mn-clr-text {
   color: $maincolor !important;
 }
@@ -175,6 +179,7 @@ input[type="text"] {
   width: 100%;
   object-fit: cover;
   border-radius: 1rem;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1);
 }
 
 .location {
@@ -184,4 +189,33 @@ input[type="text"] {
   top: calc(8% + 0.1vw);
   left: 5%;
   color: #fff;
+}
+
+.bottom-card {
+  padding: 1rem;
+  bottom: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 75%;
+	border-radius: 0.8rem;
+	box-shadow: 0 4px 2px -2px gray;
+}
+
+.bottom-card p {
+	width: 14rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#online {
+  color: #2ad260;
+  font-size: 0.8rem;
+	top: 40%;
+	right: 5rem;
+  right: 0.1rem;
+}
+
+.bottom-card span {
+  font-size: 1.2rem;
+  color: #434769;
 }
