@@ -2,6 +2,18 @@
   background-color: #4547ad;
 }
 
+.mn-clr-text {
+  color: #4547ad !important;
+}
+
+.logo-size-big {
+  font-size: 10rem;
+}
+
+.logo-size-medium {
+  font-size: calc(3rem + 0.5vw);
+}
+
 html {
   font-size: 10px;
   font-family: 'Arimo', sans-serif;
@@ -23,13 +35,12 @@ html {
   transition: opacity 2s;
 }
 
-.form-content span {
+.logo-text {
   color: #fff;
-  font-size: 10rem;
   font-family: 'Patrick Hand SC', cursive;
 }
 
-.form-content strong {
+.logo-text strong {
   color: #ef906e;
 }
 
@@ -82,6 +93,7 @@ input[type="text"] {
 }
 
 .register {
+  font-weight: 700;
   color: #ef906e;
 }
 
@@ -97,5 +109,79 @@ input[type="text"] {
 /* End login styling */
 /* Start index styling */
 /* End index styling */
+.navbar {
+  min-width: 32rem;
+  height: 5.2rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-icon {
+  font-size: 2rem;
+  color: #2b333b;
+  margin: 0 1rem;
+}
+
+.nav-logo {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.round-images img {
+  width: 9vh;
+  height: 10vh;
+  -webkit-box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.1);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.round-images img:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+#first-profile:hover + #times-icon {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.secondary {
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  justify-self: end;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#times-icon {
+  border-radius: 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: calc(3rem + 0.5vw);
+  color: #ef906e;
+  top: 30%;
+  right: 1rem;
+  background: #fff;
+}
 
 /*# sourceMappingURL=styles.css.map */

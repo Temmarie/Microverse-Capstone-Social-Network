@@ -5,6 +5,18 @@ $auxcolor: #ef906e;
   background-color: $maincolor;
 }
 
+.mn-clr-text {
+  color: $maincolor !important;
+}
+
+.logo-size-big {
+  font-size: 10rem;
+}
+
+.logo-size-medium {
+  font-size: calc(3rem + 0.5vw);
+}
+
 html {
   font-size: 10px;
   font-family: 'Arimo', sans-serif;
@@ -24,13 +36,12 @@ html {
   transition: opacity 2s;
 }
 
-.form-content span {
+.logo-text {
   color: #fff;
-  font-size: 10rem;
   font-family: 'Patrick Hand SC', cursive;
 }
 
-.form-content strong {
+.logo-text strong {
   color: $auxcolor;
 }
 
@@ -81,6 +92,7 @@ input[type="text"] {
 }
 
 .register {
+  font-weight: 700;
   color: $auxcolor;
 }
 
@@ -100,3 +112,60 @@ input[type="text"] {
 
 /* End index styling */
 
+.navbar {
+  min-width: 32rem;
+  height: 5.2rem;
+  flex-shrink: 0;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-icon {
+  font-size: 2rem;
+  color: #2b333b;
+  margin: 0 1rem;
+}
+
+.nav-logo {
+  width: fit-content;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.round-images img {
+  width: 9vh;
+  height: 10vh;
+  box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+.round-images img:hover {
+  transform: scale(1.25);
+  transition: all 0.2s ease-out;
+}
+
+#first-profile:hover + #times-icon {
+  transform: scale(1.25);
+  transition: all 0.2s ease-out;
+}
+
+.secondary {
+  flex-shrink: 1;
+  flex-grow: 1;
+  justify-self: end;
+  width: fit-content;
+}
+
+#times-icon {
+  border-radius: 2rem;
+  width: fit-content;
+  font-size: calc(3rem + 0.5vw);
+  color: $auxcolor;
+  top: 30%;
+  right: 1rem;
+  background: #fff;
+}
