@@ -75,15 +75,6 @@ input[type="text"] {
   border-radius: 0.5rem;
 }
 
-@media screen and (min-width: 767px) {
-  .middle-focus {
-    max-width: 42rem;
-  }
-
-  .form-content {
-    background-position: 40% 50%;
-  }
-}
 .bottom {
   margin: 20rem 0 0 0;
   background-color: rgba(255, 255, 255, 0.95);
@@ -92,6 +83,16 @@ input[type="text"] {
 
 .register {
   color: #ef906e;
+}
+
+@media screen and (min-width: 767px) {
+  .middle-focus {
+    max-width: 42rem;
+  }
+
+  .form-content {
+    background-position: 40% 50%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
