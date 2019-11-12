@@ -14,8 +14,6 @@ html {
 
 .form-content {
   font-size: 1.4rem;
-  align-items: center;
-  justify-content: center;
   flex-grow: 1;
   height: 100vh;
   width: 100%;
@@ -51,9 +49,7 @@ html {
 input[type="password"],
 input[type="text"] {
   text-align: left;
-  margin: 1rem 0;
   padding: 1rem 1rem 1rem 3rem;
-  display: block;
   width: 100%;
   border: 1px solid $maincolor;
   border-radius: 0.5rem;
@@ -90,7 +86,6 @@ input[type="text"] {
 
 .bottom {
   margin: 20rem 0 0 0;
-  padding: 1rem;
   background-color: rgba(255, 255, 255, 0.95);
   border-radius: 0.5rem;
 }
