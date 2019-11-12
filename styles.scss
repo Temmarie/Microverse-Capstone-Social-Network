@@ -1,0 +1,69 @@
+$maincolor: #4547ad;
+
+.mn-clr {
+  background-color: $maincolor;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Arimo', sans-serif;
+}
+
+/* Login styling */
+
+.form-content {
+  font-size: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, rgba(78, 80, 184, 0.85) 35%, rgba(255, 0, 0, 0.45)), url(images/newbackground.jpg);
+  background-size: contain stretch;
+  background-repeat: no-repeat;
+  background-position-x: left;
+}
+
+.form-content  span {
+  color: #fff;
+  font-size: 10rem;
+  font-family: 'Patrick Hand SC', cursive;
+}
+
+.form-content strong {
+  color: #ef906e;
+}
+
+.icon {
+  top: 2rem;
+  left: 1rem;
+  font-size: 1.6rem;
+  color:$maincolor;
+  text-align: center;
+}
+
+input:not([type="submit"]) {
+  text-align: left;
+  margin: 1rem 0;
+  padding: 1rem 1rem 1rem 3rem;
+  display: block;
+  width: 100%;
+  border: 1px solid $maincolor;
+  border-radius: 0.5rem;
+}
+
+#login {
+  width: 80%;
+  border: 1px solid $maincolor;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  align-self: center;
+}
+
+#login:hover {
+  border:  1px solid $maincolor;
+}
+
+#login:focus {
+  border:  1px solid $maincolor;
+}
