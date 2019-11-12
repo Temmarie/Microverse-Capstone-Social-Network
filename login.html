@@ -17,10 +17,10 @@
 </head>
 
 <main>
-	<div class="container-fluid form-content d-flex img-fluid">
+	<div class="container-fluid form-content d-flex flex-column justify-content-around">
 
-		<div class="middle-focus d-flex flex-column w-25 justify-center">
-			<span class="text-center">Swip<strong>ex</strong></span>
+		<div class="middle-focus d-flex flex-column justify-center align-center">
+			<span class="text-center align-center">Swip<strong>ex</strong></span>
 			<form action="">
 				<div class="input-container d-flex mw-100 mb-4 position-relative text-muted">
 					<i class="fa fa-user-o icon position-absolute" aria-hidden="true"></i>
@@ -31,12 +31,16 @@
 			<form action="">
 				<div class="input-container d-flex mw-100 mb-4 position-relative text-muted">
 					<i class="fa fa-unlock-alt icon position-absolute" aria-hidden="true"></i>
-					<input type="password" id="user-password" placeholder="Password" class="rounded">
+					<input type="password" id="user-password" placeholder="Password" class="">
 				</div>
 
 			</form>
 
 			<input type="submit" value="Login" id="login" class="btn btn-primary mn-clr" class="text-center">
+		</div>
+		<div class="bottom d-flex p-3 text-center">
+			<p class="not py-0 my-0 ml-3">Not a member yet?</p>
+			<p class="register py-0 my-0 mx-3">Register</p>
 		</div>
 	</div>
 </main>

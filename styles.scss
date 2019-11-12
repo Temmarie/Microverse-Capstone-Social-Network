@@ -1,4 +1,5 @@
 $maincolor: #4547ad;
+$auxcolor: #ef906e;
 
 .mn-clr {
   background-color: $maincolor;
@@ -12,7 +13,7 @@ html {
 /* Login styling */
 
 .form-content {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   align-items: center;
   justify-content: center;
   flex-grow: 1;
@@ -21,28 +22,34 @@ html {
   background: linear-gradient(135deg, rgba(78, 80, 184, 0.85) 35%, rgba(255, 0, 0, 0.45)), url(images/newbackground.jpg);
   background-size: contain stretch;
   background-repeat: no-repeat;
-  background-position-x: left;
+  background-position-x: right;
+  transition: opacity 2s;
 }
 
-.form-content  span {
+.form-content span {
   color: #fff;
   font-size: 10rem;
   font-family: 'Patrick Hand SC', cursive;
 }
 
 .form-content strong {
-  color: #ef906e;
+  color: $auxcolor;
+}
+
+.middle-focus {
+  width: 90%;
 }
 
 .icon {
-  top: 2rem;
+  top: 2.2rem;
   left: 1rem;
   font-size: 1.6rem;
-  color:$maincolor;
+  color: $maincolor;
   text-align: center;
 }
 
-input:not([type="submit"]) {
+input[type="password"],
+input[type="text"] {
   text-align: left;
   margin: 1rem 0;
   padding: 1rem 1rem 1rem 3rem;
@@ -60,10 +67,34 @@ input:not([type="submit"]) {
   align-self: center;
 }
 
-#login:hover {
-  border:  1px solid $maincolor;
+#login:hover,
+#login:active {
+  background-color: $maincolor;
+  border-radius: 0.5rem;
 }
 
 #login:focus {
-  border:  1px solid $maincolor;
+  box-shadow: 0 0 0 0.2rem rgba($maincolor, 0.5);
+  border-radius: 0.5rem;
+}
+
+@media screen and(min-width: 767px) {
+  .middle-focus {
+    max-width: 42rem;
+  }
+
+  .form-content {
+    background-position: 40% 50%;
+  }
+}
+
+.bottom {
+  margin: 20rem 0 0 0;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 0.5rem;
+}
+
+.register {
+  color: $auxcolor;
 }
