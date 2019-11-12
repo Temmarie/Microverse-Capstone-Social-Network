@@ -31,8 +31,6 @@ html {
   background-size: contain stretch;
   background-repeat: no-repeat;
   background-position-x: right;
-  -webkit-transition: opacity 2s;
-  transition: opacity 2s;
 }
 
 .logo-text {
@@ -137,7 +135,7 @@ input[type="text"] {
   width: 90%;
 }
 
-.round-images img {
+.round-images .rounded {
   width: 9vh;
   height: 10vh;
   -webkit-box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.1);
@@ -146,7 +144,7 @@ input[type="text"] {
      object-fit: cover;
 }
 
-.round-images img:hover {
+.round-images .rounded:hover {
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
   -webkit-transition: all 0.2s ease-out;
@@ -182,6 +180,24 @@ input[type="text"] {
   top: 30%;
   right: 1rem;
   background: #fff;
+}
+
+.card-view img {
+  z-index: 1;
+  height: 60vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+
+.location {
+  z-index: 2;
+  font-size: calc(1.2rem + 1vw);
+  font-weight: 700;
+  top: calc(8% + 0.1vw);
+  left: 5%;
+  color: #fff;
 }
 
 /*# sourceMappingURL=styles.css.map */
