@@ -207,6 +207,8 @@ input[type="text"] {
 }
 
 .bottom-card {
+  width: 60%;
+  max-width: 36rem;
   padding: 1rem;
   bottom: -2.5rem;
   left: 50%;
@@ -219,7 +221,7 @@ input[type="text"] {
 }
 
 .bottom-card p {
-  width: 14rem;
+  width: 100%;
   font-size: 2rem;
   font-weight: 700;
 }

@@ -192,17 +192,19 @@ input[type="text"] {
 }
 
 .bottom-card {
+  width: 60%;
+  max-width: 36rem;
   padding: 1rem;
   bottom: -2.5rem;
   left: 50%;
   transform: translateX(-50%);
   width: 75%;
-	border-radius: 0.8rem;
-	box-shadow: 0 4px 2px -2px gray;
+  border-radius: 0.8rem;
+  box-shadow: 0 4px 2px -2px gray;
 }
 
 .bottom-card p {
-	width: 14rem;
+  width: 100%;
   font-size: 2rem;
   font-weight: 700;
 }
@@ -210,8 +212,8 @@ input[type="text"] {
 #online {
   color: #2ad260;
   font-size: 0.8rem;
-	top: 40%;
-	right: 5rem;
+  top: 40%;
+  right: 5rem;
   right: 0.1rem;
 }
 
