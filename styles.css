@@ -424,6 +424,11 @@ footer {
 .row-content i:hover {
   color: #1d1e2c;
 }
+.row-content .padded {
+  color: #fff;
+  background-color: #ef906e;
+  border-radius: 0.5rem;
+}
 
 /* End index styling */
 

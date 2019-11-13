@@ -398,6 +398,12 @@ footer {
   i:hover {
     color: darken($font-secondary, 45%);
   }
+
+  .padded {
+    color: #fff;
+    background-color: $auxcolor;
+    border-radius: 0.5rem;
+  }
 }
 
 /* End index styling */
