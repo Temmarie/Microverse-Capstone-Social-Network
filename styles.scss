@@ -264,9 +264,27 @@ footer {
   box-shadow: 5px 5px 5px #ccc;
 }
 
+@media screen and(max-width: 1440px) {
+  #last-picture {
+    display: none;
+  }
+}
+
+@media screen and(min-width: 992px) {
+  .card-view img {
+    height: 75vh;
+  }
+}
+
 @media screen and(min-width: 768px) {
   .bottom-card {
     bottom: -5.5rem;
+  }
+}
+
+@media screen and(max-height: 640px) {
+  .card-view img {
+    height: 55vh;
   }
 }
 
@@ -276,10 +294,11 @@ footer {
   }
 }
 
-@media screen and(max-height: 640px) {
-  .card-view img {
-    height: 55vh;
-  }
+.user-picture {
+  width: 8.5vh;
+  height: 10vh;
+  box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.1);
+  object-fit: cover;
 }
 
 /* End index styling */

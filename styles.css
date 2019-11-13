@@ -289,14 +289,19 @@ footer {
           box-shadow: 5px 5px 5px #ccc;
 }
 
+@media screen and (max-width: 1440px) {
+  #last-picture {
+    display: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  .card-view img {
+    height: 75vh;
+  }
+}
 @media screen and (min-width: 768px) {
   .bottom-card {
     bottom: -5.5rem;
-  }
-}
-@media screen and (min-width: 420px) {
-  .social-container i {
-    margin: 0 calc(1rem + 2.5vw);
   }
 }
 @media screen and (max-height: 640px) {
@@ -304,6 +309,20 @@ footer {
     height: 55vh;
   }
 }
+@media screen and (min-width: 420px) {
+  .social-container i {
+    margin: 0 calc(1rem + 2.5vw);
+  }
+}
+.user-picture {
+  width: 8.5vh;
+  height: 10vh;
+  -webkit-box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.1);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /* End index styling */
 
 /*# sourceMappingURL=styles.css.map */
