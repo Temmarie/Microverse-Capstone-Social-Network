@@ -20,7 +20,7 @@
 
 html {
   font-size: 10px;
-  font-family: 'Arimo', sans-serif;
+  font-family: "Arimo", sans-serif;
 }
 
 /* Login styling */
@@ -39,7 +39,7 @@ html {
 
 .logo-text {
   color: #fff;
-  font-family: 'Patrick Hand SC', cursive;
+  font-family: "Patrick Hand SC", cursive;
 }
 
 .logo-text strong {
@@ -174,17 +174,17 @@ input[type="text"] {
 }
 
 #times-icon {
-  border-radius: 2rem;
+  border-radius: 6rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  font-size: calc(3rem + 0.5vw);
+  font-size: 3rem;
   color: #ef906e;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   right: 1rem;
-  background: #fff;
+  background-color: #fff;
 }
 
 .card-view img {
@@ -241,17 +241,60 @@ input[type="text"] {
 }
 
 footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
   bottom: 0;
 }
 
 .footer-bar {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   bottom: 0;
   height: 6rem;
 }
 
+.footer-bar i {
+  font-size: calc(3rem + 0.5vh);
+  color: #c8cfd7;
+}
+
+.social-container {
+  top: 1.5rem;
+}
+
+.right-cont {
+  right: 2.5rem;
+}
+
+.left-cont {
+  left: 2.5rem;
+}
+
+.stroop-icon {
+  top: -2rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #4547ad;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 5px 5px 5px #ccc;
+          box-shadow: 5px 5px 5px #ccc;
+}
+
+@media screen and (min-width: 1366px) {
+  #times-icon {
+    font-size: 4rem;
+  }
+}
 @media screen and (min-width: 768px) {
   .bottom-card {
     bottom: -5.5rem;
+  }
+}
+@media screen and (min-width: 415px) {
+  .social-container i {
+    margin: 0 calc(1rem + 2vw);
   }
 }
 @media screen and (max-height: 640px) {
