@@ -1,4 +1,4 @@
-$maincolor: #4547ad;
+$maincolor: #4e50b8;
 $auxcolor: #ef906e;
 $font-main: #414464;
 $font-secondary: lighten(#414464, 27%);
@@ -21,6 +21,12 @@ $font-secondary: lighten(#414464, 27%);
 
 .logo-size-medium {
   font-size: calc(3rem + 0.5vw);
+}
+
+.shadowed-box {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 1px 2px 10px 5px #ccc;
 }
 
 html {
@@ -304,12 +310,6 @@ footer {
   }
 }
 
-.user-status {
-  background-color: #fff;
-  border-radius: 1rem;
-  box-shadow: 1px 2px 10px 5px #ccc;
-}
-
 .user-picture {
   width: 9rem;
   height: 10rem;
@@ -318,13 +318,15 @@ footer {
   border-radius: 0.75rem;
 }
 
-.user-name {
+.user-name,
+.popular-title {
   font-size: 2rem;
   font-weight: bold;
   color: darken(#696c85, 30%);
 }
 
-.subs-status {
+.subs-status,
+.advertise {
   font-size: 1.6rem;
   color: lighten(#696c85, 15%);
 }
@@ -367,11 +369,12 @@ footer {
 
 .fa-heart:hover {
   transform: scale(1.25);
-	transition: all 0.8s ease-out;
-	cursor: pointer;
+  transition: all 0.8s ease-out;
+  cursor: pointer;
 }
 
-.susbcribe-btn {
+.susbcribe-btn,
+.stats-and-btn {
   height: fit-content;
   font-size: 1.4rem;
   font-weight: bold;
@@ -380,9 +383,11 @@ footer {
 }
 
 .susbcribe-btn:hover,
-.susbcribe-btn:active {
-  background-color: $maincolor;
-  border: 1px solid $maincolor;
+.susbcribe-btn:active,
+.stats-and-btn:hover,
+.stats-and-btn:active {
+  background-color: darken($maincolor, 10%);
+  border: 1px solid darken($maincolor, 10%);
 }
 
 .susbcribe-btn:focus {
@@ -390,11 +395,6 @@ footer {
 }
 
 .row-content {
-
-	background-color: #fff;
-  border-radius: 1rem;
-	box-shadow: 1px 2px 10px 5px #ccc;
-	
   i {
     font-size: 3rem;
     color: $font-secondary;
@@ -414,6 +414,15 @@ footer {
     color: #fff;
     background-color: $auxcolor;
     border-radius: 0.5rem;
+  }
+}
+
+.user-promotion {
+  .user-picture {
+    width: 8rem;
+    object-fit: contain;
+	  border-radius: 0;
+	  border: none;
   }
 }
 
