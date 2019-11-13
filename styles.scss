@@ -1,6 +1,6 @@
 $maincolor: #4e50b8;
 $auxcolor: #ef906e;
-$font-main: #414464;
+$font-main: rgb(92, 95, 122);
 $font-secondary: lighten(#414464, 27%);
 
 .mn-clr {
@@ -35,6 +35,7 @@ html {
 }
 
 main {
+  color: $font-main;
   background-color: darken(#fdfcfc, 0.1%);
 }
 
@@ -322,7 +323,7 @@ footer {
 .popular-title {
   font-size: 2rem;
   font-weight: bold;
-  color: darken(#696c85, 30%);
+  color: $font-main;
 }
 
 .subs-status,
@@ -396,13 +397,13 @@ footer {
 
 .row-content {
   i {
-    font-size: 3rem;
+    font-size: 2.7rem;
     color: $font-secondary;
   }
 
   span {
     color: $font-secondary;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   span:hover,
@@ -418,12 +419,64 @@ footer {
 }
 
 .user-promotion {
-  .user-picture {
-    width: 8rem;
+  .prom-picture {
+    min-width: 10rem;
+    width: 11rem;
     object-fit: contain;
-	  border-radius: 0;
-	  border: none;
+    border-radius: 0;
+    border: none;
   }
+}
+
+.get-intouch {
+  .gift-picture {
+    min-width: 8rem;
+    width: 9rem;
+    object-fit: contain;
+    border-radius: 0;
+    border: none;
+  }
+}
+
+.search-filter > * {
+  font-size: 1.8rem;
+}
+
+.filter {
+  color: $font-secondary;
+}
+
+.soft {
+  color: $font-secondary;
+  font-size: 1.5rem;
+}
+
+.linked-to {
+  font-size: 2rem;
+}
+
+.linked-to:hover {
+  text-decoration: none;
+  color: darken($maincolor, 50%);
+}
+
+.viewed-info .get-intouch,
+.viewed-info .viewed-interests {
+  display: flex;
+} 
+
+.viewed-user-name {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.viewed-common {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.touch-banner {
+  font-size: 1.6rem;
 }
 
 /* End index styling */
