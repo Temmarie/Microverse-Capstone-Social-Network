@@ -18,10 +18,19 @@
 	<!-- Project Skeleton-->
 	<nav
 		class="navbar d-flex flex-row align-center space-between mw-100 border-bottom align-items-center position-relative">
-		<i class="fas fa-bars nav-icon"></i>
+		<div class="left-nav-icons d-flex flex-row align-items-center">
+			<i class="fas fa-map-marker-alt nav-icon d-none d-lg-block"></i>
+			<p class="nav-loc align-self-center py-0 my-0 text-capitalize d-none d-lg-block">Location: <span class="nav-place font-weight-bold">Unknown</span></p>
+			<i class="fas fa-bars nav-icon d-lg-none"></i>
+		</div>
+
 		<span
 			class="logo-text mn-clr-text logo-size-medium d-block py-0 mx-auto my-0 position-absolute nav-logo">Swip<strong>ex</strong></span>
-		<i class="far fa-bell nav-icon"></i>
+		<div class="right-nav-icons d-flex flex-row align-items-center">
+			<i class="far fa-bell nav-icon"></i>
+			<i class="fas fa-bars nav-icon d-none d-lg-block"></i>
+			<a href="login.html"><i class="fas fa-user-check nav-icon mx-5 pl-5 border-left d-none d-lg-block"></i></a>
+		</div>
 	</nav>
 	<main class="container-fluid my-0">
 		<div class="row mx-auto py-3">
@@ -39,12 +48,12 @@
 					</div>
 					<div class="stnbt d-flex px-3 pb-3 justify-content-between align-items-center">
 						<div class="stats d-flex ml-1">
-								<i class="fas fa-heart p-1"></i>
-								<span class="stats-number align-self-center mt-0 pt-0 ml-3">78</span>
+							<i class="fas fa-heart p-1"></i>
+							<span class="stats-number align-self-center mt-0 pt-0 ml-3">78</span>
 						</div>
 						<div class="susbcribe-btn btn btn-primary py-3 mn-clr mr-4">
-								<i class="fas fa-check-circle"></i>
-								<span>Get-Premium</span>
+							<i class="fas fa-check-circle"></i>
+							<span>Get-Premium</span>
 						</div>
 					</div>
 				</div>
@@ -161,12 +170,13 @@
 						</div>
 					</div>
 					<div class="viewed-interests d-flex flex-column">
-							<span class="soft">Interests</span>
-							<p class="viewed-common flex-grow-1">Theaters, traveling, hiking, ancient-cultures, politics, walks on the beach.</p>
+						<span class="soft">Interests</span>
+						<p class="viewed-common flex-grow-1">Theaters, traveling, hiking, ancient-cultures, politics, walks on the
+							beach.</p>
 					</div>
 					<div class="viewed-languages">
-							<span class="soft">Languages</span>
-							<p class="viewed-common flex-grow-1">English (native),<br>Spanish (conversational)<br>French (written)</p>
+						<span class="soft">Languages</span>
+						<p class="viewed-common flex-grow-1">English (native),<br>Spanish (conversational)<br>French (written)</p>
 					</div>
 					<a href="#" class="linked-to align-self-center mn-clr-text py-4"><span>See profile</span></a>
 					<div class="get-intouch d-flex flex-row">
