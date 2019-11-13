@@ -138,7 +138,7 @@ input[type="text"] {
 }
 
 .round-images .rounded {
-  width: 9vh;
+  width: 8.5vh;
   height: 10vh;
   box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.1);
   object-fit: cover;
@@ -152,12 +152,20 @@ input[type="text"] {
 #first-profile:hover + #times-icon {
   transform: scale(1.25);
   transition: all 0.2s ease-out;
+  top: 3.3rem;
+  right: -1rem;
+}
+
+#times-icon + #first-profile:hover {
+  transform: scale(1.25);
+  transition: all 0.2s ease-out;
+  top: 3.3rem;
+  right: -1rem;
 }
 
 .secondary {
   flex-shrink: 1;
   flex-grow: 1;
-  justify-self: end;
   width: fit-content;
 }
 
@@ -175,7 +183,6 @@ input[type="text"] {
 .card-view img {
   z-index: 1;
   height: 60vh;
-  width: 100%;
   object-fit: cover;
   border-radius: 1rem;
   box-shadow: 0 5px 2px -2px gray;
@@ -197,14 +204,12 @@ input[type="text"] {
   bottom: -2.5rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 75%;
   border-radius: 0.8rem;
   box-shadow: 0 5px 2px -2px gray, 0 -5px 5px $maincolor;
 }
 
 .bottom-card p {
-  width: 100%;
-  font-size: calc(1.2rem + 1vw);
+  font-size: calc(1.2rem + 0.8vw);
   font-weight: 700;
 }
 
@@ -217,7 +222,7 @@ input[type="text"] {
 }
 
 .bottom-card span {
-  font-size: calc(1.2rem + 1vw);
+  font-size: calc(1rem + 0.8vw);
   color: #434769;
 }
 
@@ -250,19 +255,13 @@ footer {
 }
 
 .stroop-icon {
-  top: -2rem;
+  top: calc(-2rem - 0.8vw);
   left: 50%;
   transform: translateX(-50%);
   background-color: $maincolor;
-  padding: 0.5rem;
+  padding: calc(0.5rem + 1vw);
   border-radius: 0.5rem;
   box-shadow: 5px 5px 5px #ccc;
-}
-
-@media screen and(min-width: 1366px) {
-  #times-icon {
-    font-size: 4rem;
-  }
 }
 
 @media screen and(min-width: 768px) {
@@ -273,7 +272,7 @@ footer {
 
 @media screen and(min-width: 420px) {
   .social-container i {
-    margin: 0 calc(1rem + 2vw);
+    margin: 0 calc(1rem + 2.5vw);
   }
 }
 

@@ -139,7 +139,7 @@ input[type="text"] {
 }
 
 .round-images .rounded {
-  width: 9vh;
+  width: 8.5vh;
   height: 10vh;
   -webkit-box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.1);
@@ -159,6 +159,17 @@ input[type="text"] {
           transform: scale(1.25);
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+  top: 3.3rem;
+  right: -1rem;
+}
+
+#times-icon + #first-profile:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  top: 3.3rem;
+  right: -1rem;
 }
 
 .secondary {
@@ -167,7 +178,6 @@ input[type="text"] {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  justify-self: end;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -190,7 +200,6 @@ input[type="text"] {
 .card-view img {
   z-index: 1;
   height: 60vh;
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 1rem;
@@ -215,15 +224,13 @@ input[type="text"] {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 75%;
   border-radius: 0.8rem;
   -webkit-box-shadow: 0 5px 2px -2px gray, 0 -5px 5px #4547ad;
           box-shadow: 0 5px 2px -2px gray, 0 -5px 5px #4547ad;
 }
 
 .bottom-card p {
-  width: 100%;
-  font-size: calc(1.2rem + 1vw);
+  font-size: calc(1.2rem + 0.8vw);
   font-weight: 700;
 }
 
@@ -236,7 +243,7 @@ input[type="text"] {
 }
 
 .bottom-card span {
-  font-size: calc(1.2rem + 1vw);
+  font-size: calc(1rem + 0.8vw);
   color: #434769;
 }
 
@@ -271,22 +278,17 @@ footer {
 }
 
 .stroop-icon {
-  top: -2rem;
+  top: calc(-2rem - 0.8vw);
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   background-color: #4547ad;
-  padding: 0.5rem;
+  padding: calc(0.5rem + 1vw);
   border-radius: 0.5rem;
   -webkit-box-shadow: 5px 5px 5px #ccc;
           box-shadow: 5px 5px 5px #ccc;
 }
 
-@media screen and (min-width: 1366px) {
-  #times-icon {
-    font-size: 4rem;
-  }
-}
 @media screen and (min-width: 768px) {
   .bottom-card {
     bottom: -5.5rem;
@@ -294,7 +296,7 @@ footer {
 }
 @media screen and (min-width: 420px) {
   .social-container i {
-    margin: 0 calc(1rem + 2vw);
+    margin: 0 calc(1rem + 2.5vw);
   }
 }
 @media screen and (max-height: 640px) {
