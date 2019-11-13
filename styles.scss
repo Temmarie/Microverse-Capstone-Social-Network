@@ -112,16 +112,6 @@ input[type="text"] {
   color: $auxcolor;
 }
 
-@media screen and(min-width: 767px) {
-  .middle-focus {
-    max-width: 42rem;
-  }
-
-  .form-content {
-    background-position: 40% 50%;
-  }
-}
-
 /* End login styling */
 
 /* Start index styling */
@@ -279,36 +269,6 @@ footer {
   padding: calc(0.5rem + 1vw);
   border-radius: 0.5rem;
   box-shadow: 5px 5px 5px #ccc;
-}
-
-@media screen and(max-width: 1440px) {
-  #last-picture {
-    display: none;
-  }
-}
-
-@media screen and(min-width: 992px) {
-  .card-view img {
-    height: 75vh;
-  }
-}
-
-@media screen and(min-width: 768px) {
-  .bottom-card {
-    bottom: -5.5rem;
-  }
-}
-
-@media screen and(max-height: 640px) {
-  .card-view img {
-    height: 55vh;
-  }
-}
-
-@media screen and(min-width: 420px) {
-  .social-container i {
-    margin: 0 calc(1rem + 2.5vw);
-  }
 }
 
 .user-picture {
@@ -480,3 +440,43 @@ footer {
 }
 
 /* End index styling */
+
+@media screen and(max-width: 1440px) {
+  #last-picture {
+    display: none;
+  }
+}
+
+@media screen and(min-width: 992px) {
+  .card-view img {
+    height: 75vh;
+  }
+}
+
+@media screen and(min-width: 768px) {
+  .bottom-card {
+    bottom: -5.5rem;
+  }
+}
+
+@media screen and(max-height: 640px) {
+  .card-view img {
+    height: 55vh;
+  }
+}
+
+@media screen and(min-width: 420px) {
+  .social-container i {
+    margin: 0 calc(1rem + 2.5vw);
+  }
+}
+
+@media screen and(min-width: 767px) {
+  .middle-focus {
+    max-width: 42rem;
+  }
+
+  .form-content {
+    background-position: 40% 50%;
+  }
+}
