@@ -137,6 +137,10 @@ input[type="text"] {
   width: 90%;
 }
 
+.social-tab {
+  box-shadow: 10px #ccc;
+}
+
 .round-images .rounded {
   width: 8.5vh;
   height: 10vh;
@@ -185,7 +189,7 @@ input[type="text"] {
   height: 60vh;
   object-fit: cover;
   border-radius: 1rem;
-  box-shadow: 0 5px 2px -2px gray;
+  box-shadow: 1px 2px 10px 5px #ccc;
 }
 
 .location {
@@ -205,7 +209,7 @@ input[type="text"] {
   left: 50%;
   transform: translateX(-50%);
   border-radius: 0.8rem;
-  box-shadow: 0 5px 2px -2px gray, 0 -5px 5px $maincolor;
+  box-shadow: 1px 5px 10px 5px #ccc, 0 -5px 3px $maincolor;
 }
 
 .bottom-card p {
@@ -294,11 +298,82 @@ footer {
   }
 }
 
+.user-status {
+  border-radius: 0.5rem;
+  box-shadow: 1px 2px 10px 5px #ccc;
+}
+
 .user-picture {
-  width: 8.5vh;
-  height: 10vh;
+  width: 9rem;
+  height: 10rem;
   box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.1);
   object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.user-name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: darken(#696c85, 30%);
+}
+
+.subs-status {
+  font-size: 1.4rem;
+  color: lighten(#696c85, 15%);
+}
+
+.user-name-and-sub strong {
+  font-size: 1.4rem;
+  color: $maincolor;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.fa-user-cog {
+  color: lighten(#696c85, 15%);
+  font-size: 2rem;
+  padding: 1rem;
+  border: 1px solid lighten(#696c85, 45%);
+  border-radius: 0.5rem;
+}
+
+.fa-user-cog:hover {
+  background-color: lighten(#696c85, 40%);
+  border: 1px solid lighten(#696c85, 15%);
+  border-radius: 0.5rem;
+}
+
+.stnbt {
+  height: fit-content;
+  align-items: flex-start;
+}
+
+.stats-number {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.fa-heart {
+  color: $auxcolor;
+  font-size: 2rem;
+}
+
+.susbcribe-btn {
+  height: fit-content;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 1px solid $maincolor;
+  border-radius: 0.5rem;
+}
+
+.susbcribe-btn:hover,
+.susbcribe-btn:active {
+  background-color: $maincolor;
+  border: 1px solid $maincolor;
+}
+
+.susbcribe-btn:focus {
+  box-shadow: 0 0 0 0.2rem rgba($maincolor, 0.5);
 }
 
 /* End index styling */
