@@ -110,7 +110,6 @@ input[type="text"] {
 }
 /* End login styling */
 /* Start index styling */
-/* End index styling */
 .navbar {
   min-width: 32rem;
   height: 5.2rem;
@@ -181,7 +180,9 @@ input[type="text"] {
   width: fit-content;
   font-size: calc(3rem + 0.5vw);
   color: #ef906e;
-  top: 30%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   right: 1rem;
   background: #fff;
 }
@@ -193,8 +194,8 @@ input[type="text"] {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 1rem;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 5px 2px -2px gray;
+          box-shadow: 0 5px 2px -2px gray;
 }
 
 .location {
@@ -216,13 +217,13 @@ input[type="text"] {
           transform: translateX(-50%);
   width: 75%;
   border-radius: 0.8rem;
-  -webkit-box-shadow: 0 4px 2px -2px gray;
-          box-shadow: 0 4px 2px -2px gray;
+  -webkit-box-shadow: 0 5px 2px -2px gray, 0 -5px 5px #4547ad;
+          box-shadow: 0 5px 2px -2px gray, 0 -5px 5px #4547ad;
 }
 
 .bottom-card p {
   width: 100%;
-  font-size: 2rem;
+  font-size: calc(1.2rem + 1vw);
   font-weight: 700;
 }
 
@@ -235,8 +236,29 @@ input[type="text"] {
 }
 
 .bottom-card span {
-  font-size: 1.2rem;
+  font-size: calc(1.2rem + 1vw);
   color: #434769;
 }
+
+footer {
+  bottom: 0;
+}
+
+.footer-bar {
+  bottom: 0;
+  height: 6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .bottom-card {
+    bottom: -5.5rem;
+  }
+}
+@media screen and (max-height: 640px) {
+  .card-view img {
+    height: 55vh;
+  }
+}
+/* End index styling */
 
 /*# sourceMappingURL=styles.css.map */
