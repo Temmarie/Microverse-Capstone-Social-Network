@@ -20,7 +20,7 @@
 
 html {
   font-size: 10px;
-  font-family: "Arimo", sans-serif;
+  font-family: 'Arimo', sans-serif;
 }
 
 /* Login styling */
@@ -39,7 +39,7 @@ html {
 
 .logo-text {
   color: #fff;
-  font-family: "Patrick Hand SC", cursive;
+  font-family: 'Patrick Hand SC', cursive;
 }
 
 .logo-text strong {
@@ -292,7 +292,7 @@ footer {
     bottom: -5.5rem;
   }
 }
-@media screen and (min-width: 415px) {
+@media screen and (min-width: 420px) {
   .social-container i {
     margin: 0 calc(1rem + 2vw);
   }
