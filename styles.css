@@ -23,6 +23,10 @@ html {
   font-family: 'Arimo', sans-serif;
 }
 
+main {
+  background-color: #fdfcfc;
+}
+
 /* Login styling */
 .form-content {
   font-size: 1.4rem;
@@ -320,6 +324,7 @@ footer {
   }
 }
 .user-status {
+  background-color: #fff;
   border-radius: 0.5rem;
   -webkit-box-shadow: 1px 2px 10px 5px #ccc;
           box-shadow: 1px 2px 10px 5px #ccc;
@@ -342,12 +347,12 @@ footer {
 }
 
 .subs-status {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: #9294a9;
 }
 
 .user-name-and-sub strong {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: #4547ad;
   font-weight: bold;
   text-transform: capitalize;
@@ -383,14 +388,14 @@ footer {
 
 .fa-heart {
   color: #ef906e;
-  font-size: 2rem;
+  font-size: 3.5rem;
 }
 
 .susbcribe-btn {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: bold;
   border: 1px solid #4547ad;
   border-radius: 0.5rem;
@@ -405,6 +410,19 @@ footer {
 .susbcribe-btn:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(69, 71, 173, 0.5);
           box-shadow: 0 0 0 0.2rem rgba(69, 71, 173, 0.5);
+}
+
+.row-content i {
+  font-size: 3rem;
+  color: #8185ad;
+}
+.row-content span {
+  color: #8185ad;
+  font-size: 1.8rem;
+}
+.row-content span:hover,
+.row-content i:hover {
+  color: #1d1e2c;
 }
 
 /* End index styling */
