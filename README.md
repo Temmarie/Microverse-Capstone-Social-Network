@@ -59,9 +59,9 @@ MUST: use of linterns, Bootstrap CSS classes, follow CSS best practices, use of 
 ## Contact
 
 
-Leonardo Mezu: [ @leonmezu](https://twitter.com/leonmezu) - leo7xs@gmail.com
+Leonardo Mezu, Twiiter and E-mail: [ @leonmezu](https://twitter.com/leonmezu) - leo7xs@gmail.com
 
-Project Link: [https://github.com/leonmezu1/Working-with-bootstrap-4-Microverse-Project](https://github.com/leonmezu1?tab=repositories)
+Project Link: [https://github.com/leonmezu1/Microverse-Capstone-Social-Network](https://github.com/leonmezu1/Microverse-Capstone-Social-Network)
 
 
 
